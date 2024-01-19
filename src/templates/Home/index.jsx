@@ -2,7 +2,7 @@ import { Wrapper } from './styles'
 
 function Home() {
   return (
-    <Wrapper>
+    <Wrapper background='blue'>
       <h1>Hello</h1>
     </Wrapper>
   )
