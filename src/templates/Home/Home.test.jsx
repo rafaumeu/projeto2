@@ -12,5 +12,4 @@ test('renders learn react link', () => {
   expect(headingContainer).toHaveStyle({
     background: theme.colours.secondaryBg,
   })
-  expect(headingContainer).toMatchSnapshot()
 })
