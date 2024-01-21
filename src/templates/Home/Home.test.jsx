@@ -10,7 +10,7 @@ test('renders learn react link', () => {
     name: 'Hello',
   }).parentElement
   expect(headingContainer).toHaveStyle({
-    background: theme.background.secondaryBg,
+    background: theme.colours.secondaryBg,
   })
   expect(headingContainer).toMatchSnapshot()
 })

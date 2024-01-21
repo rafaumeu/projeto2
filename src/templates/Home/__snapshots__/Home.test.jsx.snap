@@ -2,11 +2,10 @@
 
 exports[`renders learn react link 1`] = `
 .c0 {
-  background: green;
+  background: #dc143c;
 }
 
 <div
-  background="blue"
   class="c0"
 >
   <h1>
