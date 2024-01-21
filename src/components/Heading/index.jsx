@@ -1,14 +1,32 @@
 import P from 'prop-types'
 import React from 'react'
 
-import { Title } from './styles'
+import * as Styled from './styles'
 
-const Heading = ({ children, light = false }) => {
-  return <Title light={light}>{children}</Title>
+const Heading = ({
+  children,
+  colordark = true,
+  as = 'h1',
+  size = 'huge',
+  uppercase = false,
+}) => {
+  return (
+    <Styled.Title
+      colordark={colordark}
+      as={as}
+      size={size}
+      uppercase={uppercase}
+    >
+      {children}
+    </Styled.Title>
+  )
 }
 
 Heading.propTypes = {
   children: P.node.isRequired,
-  light: P.bool.isRequired,
+  colordark: P.bool,
+  as: P.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
+  size: P.oneOf(['small', 'medium', 'big', 'huge']),
+  uppercase: P.bool,
 }
 export default Heading
