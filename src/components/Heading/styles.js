@@ -16,15 +16,16 @@ const titleSize = {
   `,
 }
 
-const titleCase = (uppercase) => css`
-  text-transform: ${uppercase ? 'uppercase' : 'none'};
-`
-
 const mediaFont = (theme) => css`
   @media ${theme.media.lteMedium} {
     font-size: ${theme.fonts.sizes.xlarge};
   }
 `
+
+const titleCase = (uppercase) => css`
+  text-transform: ${uppercase ? 'uppercase' : 'none'};
+`
+
 export const Title = styled.h1`
   ${({ theme, colordark, size, uppercase }) => css`
     color: ${colordark ? theme.colours.primaryColor : theme.colours.white};
