@@ -1,11 +1,9 @@
+import Base from '../Base'
+import { mockBase } from '../Base/stories'
 import { Wrapper } from './styles'
 
 function Home() {
-  return (
-    <Wrapper>
-      <h1>Hello</h1>
-    </Wrapper>
-  )
+  return <Base {...mockBase} />
 }
 
 export default Home

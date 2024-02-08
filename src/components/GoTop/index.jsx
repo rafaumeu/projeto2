@@ -1,5 +1,4 @@
 import { KeyboardArrowUp } from '@styled-icons/material-outlined'
-import P from 'prop-types'
 
 import * as Styled from './styles'
 
