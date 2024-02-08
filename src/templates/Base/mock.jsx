@@ -2,7 +2,6 @@ import GridText from '../../components/GridText'
 import gridMock from '../../components/GridText/mock'
 import linksMock from '../../components/NavLinks/mock'
 
-export default {}
 export const mockBase = {
   children: (
     <div>
